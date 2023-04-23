@@ -229,7 +229,7 @@ void initTimer(void) {
 
     // Configure the driver
     Timer_Params_init(&params);
-    params.period = 1000000;
+    params.period = 100000;
     params.periodUnits = Timer_PERIOD_US;
     params.timerMode = Timer_CONTINUOUS_CALLBACK;
     params.timerCallback = timerCallback;
